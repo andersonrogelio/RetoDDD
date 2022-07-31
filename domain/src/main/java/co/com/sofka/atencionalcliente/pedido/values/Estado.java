@@ -4,10 +4,11 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class NombreProducto implements ValueObject<String> {
+public class Estado implements ValueObject<String> {
+
     private final String value;
 
-    public NombreProducto(String value) {
+    public Estado(String value) {
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
             throw new IllegalArgumentException("El nombre no puede estar en blanco");
@@ -22,5 +23,4 @@ public class NombreProducto implements ValueObject<String> {
     public String value() {
         return value;
     }
-
 }
