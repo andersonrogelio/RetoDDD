@@ -1,4 +1,10 @@
 package co.com.sofka.atencionalcliente.pedido.values;
 
-public class Costo {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class Costo implements ValueObject<String> {
+    @Override
+    public String value() {
+        return null;
+    }
 }
