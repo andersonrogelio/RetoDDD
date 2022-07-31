@@ -1,4 +1,4 @@
-package co.com.sofka.atencionalcliente.pedido;
+package co.com.sofka.atencionalcliente.pedido.entities;
 
 import co.com.sofka.atencionalcliente.pedido.values.DescripcionProducto;
 import co.com.sofka.atencionalcliente.pedido.values.NombreProducto;

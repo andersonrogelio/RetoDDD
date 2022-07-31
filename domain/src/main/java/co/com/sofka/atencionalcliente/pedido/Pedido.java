@@ -1,5 +1,6 @@
 package co.com.sofka.atencionalcliente.pedido;
 
+import co.com.sofka.atencionalcliente.pedido.events.ClienteAgregado;
 import co.com.sofka.atencionalcliente.pedido.events.PedidoCreado;
 import co.com.sofka.atencionalcliente.pedido.values.*;
 import co.com.sofka.domain.generic.AggregateEvent;
