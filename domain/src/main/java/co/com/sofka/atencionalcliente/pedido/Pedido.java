@@ -1,5 +1,6 @@
 package co.com.sofka.atencionalcliente.pedido;
 
+import co.com.sofka.atencionalcliente.pedido.events.PedidoCreado;
 import co.com.sofka.atencionalcliente.pedido.values.Costo;
 import co.com.sofka.atencionalcliente.pedido.values.DescripcionPedido;
 import co.com.sofka.atencionalcliente.pedido.values.FechaEntrega;
@@ -13,8 +14,9 @@ protected  PedidoID pedidoID;
 protected  DescripcionPedido descripcionPedido;
 protected  FechaEntrega fechaEntrega;
 protected Costo costo;
-protected Set<Producto>;
+//protected Set<Producto>;
     public Pedido(PedidoID entityId, DescripcionPedido descripcionPedido, FechaEntrega fechaEntrega, Costo costo) {
         super(entityId);
+        appendChange(new PedidoCreado(descripcionPedido,fechaEntrega,costo)).apply();
     }
 }
