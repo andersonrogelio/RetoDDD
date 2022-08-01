@@ -1,4 +1,5 @@
 # RetoDDD
+# Para ver la parte DDD estrategico [Haga click aqui](https://drive.google.com/file/d/11_G_LA60pXV5lSwMM7GCOJcxjztV4L8U/view?usp=sharing)
 # CHALLENGE - HACIENDO DDD DESDE CERO
 Resumen
 En este reto vamos a poner en practica las aspectos fundamentales de DDD aplicando todo el conocimiento que se a trabajado dentro del curso de DDD y las mentorías. Aquí se espera dar solución aplicando a las capas de dominio (aggregate) y business (use case).
