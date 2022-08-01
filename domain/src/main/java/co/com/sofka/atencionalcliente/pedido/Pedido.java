@@ -18,6 +18,11 @@ protected Estado estado;
         appendChange(new PedidoCreado(descripcionPedido,fechaEntrega,costo,estado)).apply();
     }
 
+    private Pedido (PedidoID entityId){
+        super(entityId);
+        subscribe(new PedidoChange(this));
+    }
+
     public  void AddCliente(ClienteID entityId , Nombre nombre, InformacionCliente informacion){
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(nombre);
